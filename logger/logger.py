@@ -1,7 +1,5 @@
 #-*-coding:utf-8-*-
 import logging.config
-import os
-import sys
 
 logging.config.fileConfig('config.ini')
 
