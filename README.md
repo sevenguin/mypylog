@@ -5,3 +5,4 @@
 * __logger__：python写的，简单的日志记录工具
 * __spark-api__：python写的，网站上抓取spark-api文档（后面或许可以通过Sphinx来生成python类文档）
 * __comparecp.py__：如果源目录比目标目录多出文件来，则拷贝，即增量拷贝
+* __image\_window.py__: if dlib.so have not image_window class, use this as a replacment, but maybe have some difference.
