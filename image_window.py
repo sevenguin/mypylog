@@ -20,7 +20,7 @@ class image_window:
 
     def add_overlay(self, dets, rgb_pixel=(255, 0, 0)):
         for det in dets:
-            r_0, r_1, c_0, c_1 = det.top(), det.bottom(), det.left(), det.right()
+            r_0, r_1, c_0, c_1 = min(det.top(), det.bottom()), max(det.top(), det.bottom()), min(det.left(), det.right()), max(det.left(), det.right())
             self.img[r_0: r_1, c_0] = rgb_pixel
             self.img[r_0: r_1, c_1] = rgb_pixel
             self.img[r_0, c_0: c_1] = rgb_pixel
